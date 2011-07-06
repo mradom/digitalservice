@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_handler_argument_taxonomy.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_term_node_tid.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_term_node_tid_depth.inc" server="www.turco7.com.ar" local="129131820000000000" remote="129131820000000000" />
+<file name="views_handler_argument_term_node_tid_depth_modifier.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_vocabulary_vid.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_field_taxonomy.inc" server="www.turco7.com.ar" local="128776716000000000" remote="128776716000000000" />
+<file name="views_handler_field_term_node_tid.inc" server="www.turco7.com.ar" local="128908908000000000" remote="128908908000000000" />
+<file name="views_handler_filter_term_node_tid.inc" server="www.turco7.com.ar" local="128835468000000000" remote="128835468000000000" />
+<file name="views_handler_filter_term_node_tid_depth.inc" server="www.turco7.com.ar" local="128885580000000000" remote="128885580000000000" />
+<file name="views_handler_filter_vocabulary_vid.inc" server="www.turco7.com.ar" local="128890764000000000" remote="128890764000000000" />
+<file name="views_handler_relationship_node_term_data.inc" server="www.turco7.com.ar" local="128991852000000000" remote="128991852000000000" />
+<file name="views_plugin_argument_default_taxonomy_tid.inc" server="www.turco7.com.ar" local="129137004000000000" remote="129137004000000000" />
+<file name="views_plugin_argument_validate_taxonomy_term.inc" server="www.turco7.com.ar" local="129040236000000000" remote="129040236000000000" />
+</dwsync>

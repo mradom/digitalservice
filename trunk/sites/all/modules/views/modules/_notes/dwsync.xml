@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="aggregator.views.inc" server="www.turco7.com.ar" local="129070476000000000" remote="129070476000000000" />
+<file name="book.views.inc" server="www.turco7.com.ar" local="129042828000000000" remote="129042828000000000" />
+<file name="book.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="comment.views.inc" server="www.turco7.com.ar" local="129041964000000000" remote="129041964000000000" />
+<file name="comment.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="comment.views_default.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="contact.views.inc" server="www.turco7.com.ar" local="128882988000000000" remote="128882988000000000" />
+<file name="filter.views.inc" server="www.turco7.com.ar" local="128884716000000000" remote="128884716000000000" />
+<file name="locale.views.inc" server="www.turco7.com.ar" local="128798316000000000" remote="128798316000000000" />
+<file name="node.views.inc" server="www.turco7.com.ar" local="129138732000000000" remote="129138732000000000" />
+<file name="node.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="node.views_default.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="poll.views.inc" server="www.turco7.com.ar" local="128727468000000000" remote="128727468000000000" />
+<file name="profile.views.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="profile.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="search.views.inc" server="www.turco7.com.ar" local="128982348000000000" remote="128982348000000000" />
+<file name="search.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="search.views_default.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="statistics.views.inc" server="www.turco7.com.ar" local="129016044000000000" remote="129016044000000000" />
+<file name="statistics.views_convert.inc" server="www.turco7.com.ar" local="128884716000000000" remote="128884716000000000" />
+<file name="statistics.views_default.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="system.views.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="taxonomy.views.inc" server="www.turco7.com.ar" local="129169836000000000" remote="129169836000000000" />
+<file name="taxonomy.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="taxonomy.views_default.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="translation.views.inc" server="www.turco7.com.ar" local="129134412000000000" remote="129134412000000000" />
+<file name="upload.views.inc" server="www.turco7.com.ar" local="129016044000000000" remote="129016044000000000" />
+<file name="upload.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="user.views.inc" server="www.turco7.com.ar" local="129137004000000000" remote="129137004000000000" />
+<file name="user.views_convert.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="views.views.inc" server="www.turco7.com.ar" local="128883852000000000" remote="128883852000000000" />
+</dwsync>

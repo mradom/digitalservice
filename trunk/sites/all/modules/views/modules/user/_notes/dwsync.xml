@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_handler_argument_user_uid.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_users_roles_rid.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_field_user.inc" server="www.turco7.com.ar" local="128776716000000000" remote="128776716000000000" />
+<file name="views_handler_field_user_language.inc" server="www.turco7.com.ar" local="128883852000000000" remote="128883852000000000" />
+<file name="views_handler_field_user_link.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_field_user_link_delete.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_field_user_link_edit.inc" server="www.turco7.com.ar" local="129134412000000000" remote="129134412000000000" />
+<file name="views_handler_field_user_mail.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_field_user_name.inc" server="www.turco7.com.ar" local="128782764000000000" remote="128782764000000000" />
+<file name="views_handler_field_user_picture.inc" server="www.turco7.com.ar" local="129072204000000000" remote="129072204000000000" />
+<file name="views_handler_field_user_roles.inc" server="www.turco7.com.ar" local="128908908000000000" remote="128908908000000000" />
+<file name="views_handler_filter_user_current.inc" server="www.turco7.com.ar" local="128974572000000000" remote="128974572000000000" />
+<file name="views_handler_filter_user_name.inc" server="www.turco7.com.ar" local="128665260000000000" remote="128665260000000000" />
+<file name="views_handler_filter_user_roles.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_argument_default_current_user.inc" server="www.turco7.com.ar" local="128673036000000000" remote="128673036000000000" />
+<file name="views_plugin_argument_default_user.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_argument_validate_user.inc" server="www.turco7.com.ar" local="129211308000000000" remote="129211308000000000" />
+</dwsync>
