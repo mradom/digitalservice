@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_handler_argument.inc" server="www.turco7.com.ar" local="129128364000000000" remote="129128364000000000" />
+<file name="views_handler_argument_date.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="views_handler_argument_formula.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_many_to_one.inc" server="www.turco7.com.ar" local="129137004000000000" remote="129137004000000000" />
+<file name="views_handler_argument_null.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_numeric.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_argument_string.inc" server="www.turco7.com.ar" local="128903724000000000" remote="128903724000000000" />
+<file name="views_handler_field.inc" server="www.turco7.com.ar" local="129211308000000000" remote="129211308000000000" />
+<file name="views_handler_field_boolean.inc" server="www.turco7.com.ar" local="129138732000000000" remote="129138732000000000" />
+<file name="views_handler_field_counter.inc" server="www.turco7.com.ar" local="129019500000000000" remote="129019500000000000" />
+<file name="views_handler_field_custom.inc" server="www.turco7.com.ar" local="128776716000000000" remote="128776716000000000" />
+<file name="views_handler_field_date.inc" server="www.turco7.com.ar" local="128883852000000000" remote="128883852000000000" />
+<file name="views_handler_field_markup.inc" server="www.turco7.com.ar" local="129029868000000000" remote="129029868000000000" />
+<file name="views_handler_field_numeric.inc" server="www.turco7.com.ar" local="128908908000000000" remote="128908908000000000" />
+<file name="views_handler_field_prerender_list.inc" server="www.turco7.com.ar" local="128908908000000000" remote="128908908000000000" />
+<file name="views_handler_field_url.inc" server="www.turco7.com.ar" local="129211308000000000" remote="129211308000000000" />
+<file name="views_handler_filter.inc" server="www.turco7.com.ar" local="129060108000000000" remote="129060108000000000" />
+<file name="views_handler_filter_boolean_operator.inc" server="www.turco7.com.ar" local="129128364000000000" remote="129128364000000000" />
+<file name="views_handler_filter_boolean_operator_string.inc" server="www.turco7.com.ar" local="128974572000000000" remote="128974572000000000" />
+<file name="views_handler_filter_date.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="views_handler_filter_equality.inc" server="www.turco7.com.ar" local="128654028000000000" remote="128654028000000000" />
+<file name="views_handler_filter_float.inc" server="www.turco7.com.ar" local="128824236000000000" remote="128824236000000000" />
+<file name="views_handler_filter_in_operator.inc" server="www.turco7.com.ar" local="129150828000000000" remote="129150828000000000" />
+<file name="views_handler_filter_many_to_one.inc" server="www.turco7.com.ar" local="129124908000000000" remote="129124908000000000" />
+<file name="views_handler_filter_numeric.inc" server="www.turco7.com.ar" local="129124908000000000" remote="129124908000000000" />
+<file name="views_handler_filter_string.inc" server="www.turco7.com.ar" local="129169836000000000" remote="129169836000000000" />
+<file name="views_handler_relationship.inc" server="www.turco7.com.ar" local="129016044000000000" remote="129016044000000000" />
+<file name="views_handler_sort.inc" server="www.turco7.com.ar" local="128903724000000000" remote="128903724000000000" />
+<file name="views_handler_sort_date.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_sort_formula.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_sort_menu_hierarchy.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_handler_sort_random.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+</dwsync>

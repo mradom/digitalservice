@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_plugin_access.inc" server="www.turco7.com.ar" local="128653164000000000" remote="128653164000000000" />
+<file name="views_plugin_access_none.inc" server="www.turco7.com.ar" local="128653164000000000" remote="128653164000000000" />
+<file name="views_plugin_access_perm.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="views_plugin_access_role.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="views_plugin_argument_default.inc" server="www.turco7.com.ar" local="128882988000000000" remote="128882988000000000" />
+<file name="views_plugin_argument_default_php.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_argument_validate.inc" server="www.turco7.com.ar" local="128882988000000000" remote="128882988000000000" />
+<file name="views_plugin_argument_validate_numeric.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_argument_validate_php.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_cache.inc" server="www.turco7.com.ar" local="129070476000000000" remote="129070476000000000" />
+<file name="views_plugin_cache_none.inc" server="www.turco7.com.ar" local="128884716000000000" remote="128884716000000000" />
+<file name="views_plugin_cache_time.inc" server="www.turco7.com.ar" local="128908044000000000" remote="128908044000000000" />
+<file name="views_plugin_display.inc" server="www.turco7.com.ar" local="129211308000000000" remote="129211308000000000" />
+<file name="views_plugin_display_attachment.inc" server="www.turco7.com.ar" local="129040236000000000" remote="129040236000000000" />
+<file name="views_plugin_display_block.inc" server="www.turco7.com.ar" local="128903724000000000" remote="128903724000000000" />
+<file name="views_plugin_display_default.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_display_feed.inc" server="www.turco7.com.ar" local="128974572000000000" remote="128974572000000000" />
+<file name="views_plugin_display_page.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="views_plugin_row.inc" server="www.turco7.com.ar" local="128882988000000000" remote="128882988000000000" />
+<file name="views_plugin_row_fields.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+<file name="views_plugin_style.inc" server="www.turco7.com.ar" local="129169836000000000" remote="129169836000000000" />
+<file name="views_plugin_style_default.inc" server="www.turco7.com.ar" local="128672172000000000" remote="128672172000000000" />
+<file name="views_plugin_style_grid.inc" server="www.turco7.com.ar" local="129211308000000000" remote="129211308000000000" />
+<file name="views_plugin_style_jump_menu.inc" server="www.turco7.com.ar" local="129128364000000000" remote="129128364000000000" />
+<file name="views_plugin_style_list.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_style_rss.inc" server="www.turco7.com.ar" local="128725740000000000" remote="128725740000000000" />
+<file name="views_plugin_style_summary.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_style_summary_jump_menu.inc" server="www.turco7.com.ar" local="129010860000000000" remote="129010860000000000" />
+<file name="views_plugin_style_summary_unformatted.inc" server="www.turco7.com.ar" local="128648844000000000" remote="128648844000000000" />
+<file name="views_plugin_style_table.inc" server="www.turco7.com.ar" local="129126636000000000" remote="129126636000000000" />
+</dwsync>
