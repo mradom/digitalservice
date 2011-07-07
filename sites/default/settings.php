@@ -89,7 +89,7 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
-$db_url = 'mysqli://mradom_digital:digital@localhost/mradom_digitalservice';
+$db_url = 'mysqli://root@localhost/digital';
 $db_prefix = '';
 
 /**
