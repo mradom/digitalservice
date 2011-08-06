@@ -1,314 +1,523 @@
-/**
- * @file
- * Page Styling
- *
- * Style the markup found in page.tpl.php. Also includes some styling of
- * miscellaneous Drupal elements that appear in the $content variable, such as
- * ul.links, .pager, .more-link, etc.
- */
+@charset "utf-8";
+/* CSS Document */
+/***********************/
+/*--RESET--*/
+/***********************/
 
-
-/*
- * Body
- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
 body {
-  margin: 0;
-  padding: 0;
+	background:#f3f3f3;
+	font-family:Arial, Helvetica, sans-serif;
 }
-
-#page-wrapper {
+h1, h2, h3, h4, h5, h6, ul, li, em {
+	line-height: 1em;
 }
-
-#page {
+ul, li {
+	list-style:none;
 }
-
-/*
- * The skip navigation link will be completely hidden until a user tabs to the
- * link. See http://www.webaim.org/techniques/skipnav/
- */
-#skip-link a,
-#skip-link a:visited {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: -500px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  text-align: center;
-  background-color: #666;
-  color: #fff;
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
 }
-
-#skip-link a:hover,
-#skip-link a:active,
-#skip-link a:focus {
-  position: static;
-  width: 100%;
-  height: auto;
-  padding: 2px 0 3px 0;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-/*
- * Header
- */
+a, a:link, a:hover, a:visited {
+	text-decoration:none
+}
+/***********************/
+/*--General--*/
+/***********************/
+.clearfix {
+	float:none; clear:both
+}
+.content {
+	margin:0 auto;
+	width:940px;
+}
+.content.page {
+	margin-top:10px;
+}
+/*fonts*/
+p.coment {
+	font-size:11px;
+	color:#555
+}
+p.coment a {
+	color: #0C0;
+	text-decoration:underline
+}
+#siderbar h1 {
+	font:normal 1.5em Arial, Helvetica, sans-serif;
+	color:#373737;
+	margin-bottom:10px
+}
+#main h1 {
+	font:normal 1.5em Arial, Helvetica, sans-serif;
+	line-height:1em;
+	color:#05a432;
+	margin-bottom:10px
+}
+/*-forms-*/
+form, input {
+	font: normal .9em Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0
+}
+input.item {
+	background: white;
+	border:1px solid #aaaaaa;
+	vertical-align:top;
+	color:#222;
+	font-size:.9em;
+	line-height:1em;
+	padding:2px 5px;
+	margin-bottom:7px
+}
+input.button, .button {
+	background:#595e5f url(sites/all/themes/digital/images/bg_button_grey.gif) repeat-x bottom;
+	padding:3px 7px;
+	color:#CCC;
+	width:auto;
+	cursor:pointer
+}
+input.button:hover, .button:hover {
+	opacity: .8
+}
+a.button{ float:left; margin:0 auto; font-size: .8em}
+a.button:hover{#35ae73 background:url(sites/all/themes/digital/images/bg_button_green.gif) repeat-x bottom; opacity:100%; width:auto}
+/***********************/
+/*--header--*/
+/***********************/
 #header {
+	width:100%;
+	height:163px;
+	background:#383838;
+	color:#CCC;
+	position:relative;
 }
-
-#header .section {
+#topHeader {
+	width:100%;
+	height:33px;
+	background:#575c5c url(sites/all/themes/digital/images/bg_TopHeader_nav.jpg) repeat;
 }
-
-#logo /* Wrapping link for logo */ {
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0;
+#topHeader .nav {
+	float:right;
+	margin:0;
+	height:auto;
 }
-
+#topHeader .nav div {
+	float:left;
+	height:25px;
+	padding:10px 10px 0 8px;
+	border-right:1px solid #383838;
+}
+#topHeader .nav div.active {
+	background:#383838
+}
+#topHeader .nav div a {
+	font:normal .8em Arial, Helvetica, sans-serif;
+	color:#ccc
+}
+#header > .content {
+	background:url(sites/all/themes/digital/images/bg_header.jpg) top no-repeat;
+	height:130px;
+}
+#logo {
+	width:273px;
+	height: 110px;
+	float:left;
+}
 #logo img {
-  vertical-align: bottom;
+	display:block;
+	margin:auto;
+	padding-top:5px;
 }
-
-#name-and-slogan /* Wrapper for website name and slogan */ {
+.slogan {
+	float:left;
+	margin-top:40px
 }
-
-h1#site-name,
-div#site-name /* The name of the website */ {
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.3em;
+.slogan h1 {
+	font-size:1.4em;
+	font-style:italic;
+	margin-bottom:10px;
+	width: 410px;
 }
-
-#site-name a:link,
-#site-name a:visited {
-  color: #000;
-  text-decoration: none;
+.slogan p {
+	font: normal .8em Arial, Helvetica, sans-serif;
 }
-
-#site-name a:hover,
-#site-name a:focus {
-  text-decoration: underline;
+form.searchform {
+	display: inline-block;
+ *zoom: 1; /* ie7 hack for display:inline-block */
+ *display: inline;
+	border: solid 1px #222;
+	height:29px;
+	background: #292929;
+	float:right;
+	margin-top:15px;
 }
-
-#site-slogan /* The slogan (or tagline) of a website */ {
+.searchform .searchfield {
+	background: transparent;
+	width: 202px;
+	margin:7px 0 0 10px;
+	outline: none;
+	vertical-align: top;
+	border:0;
+	color:#999
 }
-
-.region-header /* Wrapper for any blocks placed in the header region */ {
+.search_button {
+	height:29px;
+	display:inline-block;
+	width: 37px;
+	background: #636363 url(sites/all/themes/digital/images/search_button.png) top no-repeat;
+	border:0;
+	text-indent:-50px;
 }
-
-/*
- * Main (container for everything else)
- */
-#main-wrapper {
+.search_button:hover {
+	background-position:bottom
 }
+/***********************/
+/*--Menu Navigation--*/
+/*---------------------------ver comocambiarlo con javascrip----acorderon como fastastodgo------*/
+/***********************/
+#nav_region {
+	width:100%;
+	background: #38a349 url(sites/all/themes/digital/images/bg_menu.gif) bottom repeat;
+	height:44px;
+}
+ul.nav_menu {
+	margin:0 auto;
+	padding:0;
+	float:left;
+}
+ul.nav_menu li {
+	width:auto;
+	height:44px;
+	padding:0 15px;
+	background: none;
+	display: inline-block;
+ *display: inline;
+	border-right:1px solid #222;
+	float:left;
+}
+ul.nav_menu li a {
+	font:normal 1em Arial, Helvetica, sans-serif;
+	color:#f4f4f4;
+	line-height:44px;
+}
+ul.nav_menu li:hover {
+	background:#4ca537
+}
+ul.nav_menu li:hover a {
+	text-shadow: #000 1px 1px 1px;
+}
+ul.nav_menu li.active {
+	background:white
+}
+ul.nav_menu li.active a {
+	color:#333
+}
+ul.nav_menu li.active:hover a {
+	text-shadow: none
+}
+/***********************/
+/*--siderbar left--*/
+/***********************/
+#siderbar.left {
+	width:300px;
+	float:left;
+	margin-right:10px
+}
+#siderbar .content {
+	border-bottom:1px solid #aaaaaa;
+	padding-bottom:15px;
+	margin:0;
+	margin-bottom:15px;
+	width:100%;
+	float:left;
+}
+/*--login--*/
+.login form.log {
+	width:180px;
+	margin-bottom:10px;
+	float:right;
+}
+.login div.icon {
+	float:right;
+}
+/*--main side--*/
+#main_side{ width:300px; }
+#main_side a:hover, #side a:active, #side a:focus {background-color:#f4f4f4; color: #0C892C}
+.accordion .switch a {border-width:0 0 1px 0; text-decoration:none}
+#main_side ul.accordion{ margin:0 0 15px 0}
+	ul.accordion{ border:1px solid #aaaaaa; border-bottom:none; font-size:.84em;}
+	ul.accordion li{ background:#FFF; line-height:30px; border-bottom:1px solid #999; color:#373737;}
+	ul.accordion li li{ border:0;}
+#main_side ul.accordion ul {margin:0; padding:0 0 0 20px;}
 
+a.trigger {display:block; padding-left:30px; background-image: url(sites/all/themes/digital/images/plus_main-side.png); background-repeat: no-repeat; background-position: 10px 50%; color:#373737;}
+ 
+a.trigger.open {background-image: url(sites/all/themes/digital/images/minus_main-side.png)}
+ 
+.last-child a.trigger{padding-left:30px;}
+.last-child a.trigger.open{padding-left:30px; background-image: url(sites/all/themes/digital/images/plus_main-side.png); }
+ul.accordion li .last-child a.trigger{padding-left:30px; background-image:none}
+
+/*--banner-flip--*/
+
+.shoutouts { list-style: none; }
+.shoutouts li { float: left; width:300px; height: 250px; position: relative; -webkit-perspective: 700; color:white; }
+.shoutouts li .front { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 900; 
+	width: 100%; 
+	height:100%; 
+	background: white; 
+	text-align: center; 
+	-webkit-transform-style: preserve-3d; 
+	-webkit-backface-visibility: hidden; 
+	-webkit-transition: all .4s ease-in-out; 
+	-moz-transition: all .4s ease-in-out; 
+	-o-transition: all .4s ease-in-out;
+}
+.shoutouts li:hover .front { z-index: 900; -webkit-transform: rotateY(180deg); }
+.shoutouts li .back { 
+	float: none; 
+	position: absolute; 
+	top: 0; left: 0; 
+	z-index: 800; 
+	width: 260px; 
+	height: 210px;
+	padding:20px;
+	background:#208306; 
+	text-align: center; 
+	-webkit-transform: rotateY(-180deg); 
+	-webkit-transform-style: preserve-3d; 
+	-webkit-backface-visibility: hidden; 
+	transition: all .4s ease-in-out; 
+	-webkit-transition: all .4s ease-in-out; 
+	-moz-transition: all .4s ease-in-out; 
+	-o-transition: all .4s ease-in-out; 
+	
+}
+.shoutouts li .back a{color:#FFF; padding:5px; line-height:2em}
+.shoutouts li:hover .back { font-size: 16px; z-index: 1000; -webkit-transform: rotateY(0deg);  }
+.shoutouts li:hover .back a{ color:white;}
+.shoutouts li:hover .back a:hover{ background:#390}
+
+/*--tabs--*/
+
+
+/***********************/
+/*--main--*/
+/***********************/
 #main {
+	width:630px;
+	float:left
+}
+#main .content{ margin:0; margin-bottom:15px; border-bottom:1px solid #aaaaaa; width:100%; float:left}
+#main .content.white{ background:white; border:1px solid #aaaaaa;}
+#main h1{ font:normal 1.5em Arial, Helvetica, sans-serif; color:#05a432;margin-bottom:10px}
+
+/*---------breadcrumbs---------*/
+.breadcrumbs{ font-size:.8em; left:0; padding-bottom:8px; border-bottom:1px solid #fff; margin-bottom:10px}
+.breadcrumbs a{ display:inline; color:#333; padding:3px 5px;}
+.breadcrumbs a:hover{ 
+	background-color:#cacaca; 
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:3px 5px 4px;
+}
+.breadcrumbs a.current{ color:#079e1c}
+.breadcrumbs a.current:hover{ background:none}
+/*---------prod box con table---------*/
+
+table.catalog{ width:100%; background:#fff; margin-top:10px}
+table.catalog td{ text-align:center; }
+
+.content_img{ width:195px; height:200px; border:1px solid #aaaaaa; margin:0 auto;}
+table.catalog .button{ float:none; width:80px;}
+
+table.catalog .button:hover{ opacity:1; background:#35ad71 url(sites/all/themes/digital/images/bg_button_green.gif) bottom repeat-x; color:#fff }
+table.catalog p.name{ font-size:.9em}
+
+/*---prod box con div y li---*/
+
+#main .content.white.prod{ float:left;}
+.prod_box{
+	width:200px;
+	height:auto;
+	float:left;
+	padding:4px;
+	padding-right:0;
+}
+.prod_box:hover{ background:#f4f4f4}
+.prod_box .product_img{
+	width:193px;
+	border:1px solid #aaaaaa;
+	background:#FFF;
+	margin-bottom:5px
+}
+.bottom_prod_box{
+	width:193px;height:10px;background: #F69 float:left;padding:0px; margin:0px; height:191px
+}
+.center_prod_box{
+	width:195px;height: auto; float:left; text-align:center;padding:0px; margin-bottom:5px
+}
+.prod_button_region{
+	width:193px;
+	height:31px;
+	float:left;
+	margin:3px 0 0 0;
+}
+.prod_button_region .button{ margin-left:53px }
+.prod_button_region .button:hover{ opacity:1; background:#35ad71 url(sites/all/themes/digital/images/bg_button_green.gif) bottom repeat-x; color:#FFF}
+.prod_box p.name, ol.prod_boxes_mini li p.name{ font-size:.9em}
+
+/*---prod box con listado---*/
+ol.prod_boxes{ display:inline-block; padding:10px 0 0 7px; width:100%}
+
+/*---prod box mini---*/
+ol.prod_boxes_mini{ padding:10px 0 0 7px; width:643px; float:left; margin-bottom:10px}
+ol.prod_boxes_mini li{float:left; width:24%; border:}
+ol.prod_boxes_mini li:hover{background:#f4f4f4}
+ol.prod_boxes_mini li div.product_img{ 
+ clear:both; margin:5px auto; width:120px; border:1px solid #aaaaaa;
+ }
+ol.prod_boxes_mini p.name {width:100%; text-align:center;}
+ol.prod_boxes_mini .prod_button_region{ width:auto;}
+ol.prod_boxes_mini .prod_button_region .button{ margin-left:35px}
+
+/*-pagination-*/
+.pagination{ padding:5px 0; float:left; width:100%; border-top:1px solid #aaaaaa; margin-top:10px}
+.pagination .button{ float:right; margin-right:10px}
+
+.pager-content {
+	background-color:#ebebeb;
+	position:relative;
+	height:32px;
+	padding:0 7px;
+	overflow:hidden;
+	font-size:.75em;
+}
+.pager-content a {
+	float:left;
+	display:inline-block;
+	padding:2px 6px 3px 6px;
+	background:#aaaaaa;
+	border:1px solid #a8a8a8;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	color:#fff;
+	margin-right:5px;
+	margin-top:5px;
 }
 
-/*
- * Content
- */
-#content {
+.pager-content a:hover {
+	background-color:#727373;
+	border-color:#6a6b6b;
+}
+.pager-content a.first,.pager-content a.last, .pager-content a.previous, .pager-content a.next  {
+	padding:0;
+	margin-right:7px;
+	padding-top:3px;
+	background-repeat:no-repeat;
+	display: inline-block;
+	width:22px;
+	height:19px;
+	overflow:hidden;
+	text-indent:-9999em;
+	border:none
 }
 
-#content .section {
-}
+.pager-content a.first{background-image: url(sites/all/themes/digital/images/pager-first.png); }
+.pager-content a.previous{background-image: url(sites/all/themes/digital/images/pager-previous.png);}
+.pager-content a.last{background-image: url(sites/all/themes/digital/images/pager-last.png); }
+.pager-content a.next{background-image: url(sites/all/themes/digital/images/pager-next.png); }
 
-#mission /* The mission statement of the site (displayed on homepage) */ {
+.pager-content a.first:hover,
+.pager-content a.last:hover,
+.pager-content a.previous:hover,
+.pager-content a.next:hover{
+	background-position:0 -22px; text-indent:-9999em;
 }
-
-.region-content-top /* Wrapper for any blocks placed in the "content top" region */ {
+.pager-content a.first:active,
+.pager-content a.last:active, 
+.pager-content a.previous:active, 
+.pager-content a.next:active{
+	background-position:0 -22px; text-indent:-9999em;
 }
-
-.breadcrumb /* The path to the current page in the form of a list of links */ {
-  padding-bottom: 0; /* Undo system.css */
+.pager-content span.current {
+	font-weight: bold;
+	border:1px solid #aaa;
+	border-top:none;
+	background-color:#fff;
+	color:#6a6b6b;
+	padding:14px 7px 3px 7px;
+	margin-top:-5px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	display:inline-block;
+	float:left;
+	margin-right:5px;
 }
+/*---buscador x marcas---*/
+#main .content.grey{
+	width:100%;
+	background:#b6b7b6;
+	float:left
+	}
+.content.grey ul.images{ padding-left:15px; margin-top:10px; float:left }
+.content.grey ul.images li{ width: 82px; height:82px; border:3px solid #cfd0cf; float:left; display:inline-block; margin-right:14px; margin-bottom:10px}
+.content.grey ul.images li.last{ margin-right:0;}
+.content.grey ul.images li:hover{ border-color:#54B149}
 
-h1.title, /* The title of the page */
-h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
-h3.title /* Comment title */ {
-  margin: 0;
-}
-
-tr.even /* Some tables have rows marked even or odd. */ {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
-}
-
-tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
-}
-
-div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
-}
-
-div.status /* Normal priority messages */ {
-}
-
-div.warning,
-tr.warning /* Medium priority messages */ {
-  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
-}
-
-div.error,
-tr.error /* High priority messages. See also the .error declaration below. */ {
-}
-
-.error /* Errors that are separate from div.messages status messages. */ {
-  /* color: #e55; */ /* Drupal core uses a #e55 background */
-}
-
-.warning /* Warnings that are separate from div.messages status messages. */ {
-  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
-}
-
-div.tabs /* See also the tabs.css file. */ {
-}
-
-.help /* Help text on a page */ {
-  margin: 1em 0;
-}
-
-.more-help-link /* Link to more help */ {
-  font-size: 0.85em;
-  text-align: right;
-}
-
-#content-area /* Wrapper for the actual page content */ {
-}
-
-ul.links /* List of links */ {
-  margin: 1em 0;
-  padding: 0;
-}
-
-ul.links.inline {
-  margin: 0;
-  display: inline;
-}
-
-ul.links li {
-  display: inline;
-  list-style-type: none;
-  padding: 0 0.5em;
-}
-
-.pager /* A list of page numbers when more than 1 page of content is available */ {
-  clear: both;
-  margin: 1em 0;
-  text-align: center;
-}
-
-.pager a,
-.pager strong.pager-current /* Each page number in the pager list */ {
-  padding: 0.5em;
-}
-
-.feed-icons /* The links to the RSS or Atom feeds for the current list of content */ {
-  margin: 1em 0;
-}
-
-.more-link /* Aggregator, blog, and forum more link */ {
-  text-align: right; /* LTR */
-}
-
-.region-content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
-}
-
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-.region-sidebar-first {
-}
-
-.region-sidebar-first .section {
-}
-
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-.region-sidebar-second {
-}
-
-.region-sidebar-second .section {
-}
-
-/*
- * Footer
- */
+/***********************/
+/*--FOOT--*/
+/***********************/
 #footer {
+	width:100%;
+	background:#343434;
+	color:#8d8d8d;
+	position:relative;
+
 }
 
-#footer .section {
+#topfoot {
+	width:100%;
+	height:90px;
+	background:#7cd341 url(sites/all/themes/digital/images/bg_topFoot.gif) repeat;
+	border-bottom:3px solid #0d5a2c;
 }
+.footer_column{ width:33%; float:left; margin-top:10px;}
+.footer_column a{color:#8d8d8d;}
+.footer_column a:hover, .banner_topFooter a:hover { text-decoration:underline}
+.banner_topFooter{ background:url(sites/all/themes/digital/images/bg_banner_topFooter.jpg) repeat-x; height:90px; width:675px; margin:0 auto;}
+.banner_topFooter img{ float:left; padding:5px 15px 0 15px; display:inline-block}
+.banner_topFooter h2 a{ float:left; font: normal 1.2em Arial, Helvetica, sans-serif; color:#030; margin-top:15px; width:540px;}
+.banner_topFooter p{ font-size:.8em; color:#030}
+.banner_topFooter a{ font-size:1em; color:#030}
 
-#footer-message /* Wrapper for the footer message from Drupal's "Site information"
-                   and for any blocks placed in the footer region */ {
-}
-
-.region-footer {
-}
-
-/*
- * Closure
- */
-.region-page-closure /* Wrapper for any blocks placed in the closure region */ {
-}
-
-/*
- * Drupal boxes
- *
- * Wrapper for Comment form, Comment viewing options, Menu admin, and
- * Search results.
- */
-.box /* Wrapper for box */ {
-}
-
-.box h2 /* Box title */ {
-}
-
-.box .content /* Box's content wrapper */ {
-}
-
-/*
- * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
- */
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-/**
- * Hide elements from all users.
- *
- * Used for elements which should not be immediately displayed to any user. An
- * example would be a collapsible fieldset that will be expanded with a click
- * from a user. The effect of this class can be toggled with the jQuery show()
- * and hide() functions.
- */
-.element-hidden {
-  display: none;
-}
-
-/**
- * Hide elements visually, but keep them available for screen-readers.
- *
- * Used for information required for screen-reader users to understand and use
- * the site where visual display is undesirable. Information provided in this
- * manner should be kept concise, to avoid unnecessary burden on the user. Must
- * not be used for focusable elements (such as links and form elements) as this
- * causes issues for keyboard only or voice recognition users. "!important" is
- * used to prevent unintentional overrides.
- */
-.element-invisible {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
+.logoFooter{ margin-bottom:}
+.footer_column p.legal{ font-size:.75em; margin-top:45px}
+.footer_column > ul.main{ padding-left:25px; padding-top:10px }
+.footer_column ul.main li{ height:30px}
+.footer_column ul.main li a{ width:auto; font: normal 1em Arial, Helvetica, sans-serif; padding:5px; line-height:1.1em }
+.footer_column ul.main li a:hover{ text-decoration:none; background:#282828;}
+.footer_column ul.main li.social a:hover{ text-decoration:none; background:none; opacity: .6}
