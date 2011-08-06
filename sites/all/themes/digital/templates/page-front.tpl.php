@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Theme implementation to display a single Drupal page.
@@ -117,6 +118,276 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>">
+<!--HEAD-->
+<div id="header">
+  <div id="topHeader">
+    <div class="content">
+      <div class="nav">
+        <div class="active"><a href="#">Buscar</a></div>
+        <div><a href="#">Ingresar </a></div>
+        <div><a href="#">Registrarse</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div id="logo"><a href="#"><img src="sites/all/themes/digital/images/logo.png" /></a></div>
+    <div class="slogan">
+      <h1 class="eu"><?php print $site_name; ?></h1>
+      <p><?php print $site_slogan; ?></p>
+    </div>
+    <form class="searchform">
+      <input class="searchfield" type="text" value="Buscar..." onfocus="if (this.value == 'Buscar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Buscar...';}" />
+      <input name="accion" value="buscar" type="hidden">
+      <input class="search_button" value="" id="search-submit" type="submit">
+    </form>
+  </div>
+</div>
+<!--end HEAD-->
+<!--navigation-->
+<div id="nav_region">
+  <div class="content">
+    <ul class="nav_menu">
+  <?php if ($primary_links): ?>
+    <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
+  <?php endif; ?>
+      <li class="active"><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Promociones + Oulet</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--MIDDLE-->
+<div class="content">
+  <!--slider-->
+  <div class="slide">
+   <div id="s3slider">
+      <ul id="s3sliderContent">
+      <li class="s3sliderImage" style="display: list-item; "><a href="#">
+     <img src="sites/all/themes/digital/images/img_banner-1.jpg" width="940" height="270" title="productos">
+      <span class=" right" style="display: none; ">
+      <img src="sites/all/themes/digital/images/banner_1.png" width="460" height="270" title="" />
+      </span></a>
+      </li>
+      <!---->
+      <li class="s3sliderImage" style="display: list-item; "><a href="#">
+     <img src="sites/all/themes/digital/images/img_banner-2.jpg" width="940" height="270" title="servicios">
+        <span class="right" style="display: none; ">
+      <img src="sites/all/themes/digital/images/banner_2.png" width="460" height="270" title="" />  
+      </span></a>
+      </li>
+      <!---->
+      <li class="s3sliderImage" style="display: list-item; "><a href="#">
+     <img src="sites/all/themes/digital/images/img_banner-3.jpg" width="940" height="270" title="promociones">
+      <span class="right" style="display: none; ">
+      <img src="sites/all/themes/digital/images/banner_3.png" width="460" height="270" title="" />
+      </span></a>
+      </li>
+
+     <div class="clear s3sliderImage"></div>
+      </ul>
+    </div>
+  
+  </div>
+  <div class="clearfix"></div>
+  <!--end slider-->
+  
+  <!--SIDEBAR LEFT-->
+  <div id="siderbar" class="left">
+    <!--login-->
+    <div class="content login">
+      <h1>Controla tu orden aqui</h1>
+      <div class="icon"><img src="sites/all/themes/digital/images/login_icon.jpg" /></div>
+      <form class="log" method="post" action="manejador.php">
+        <label for="idname">Usuario:</label>
+        <input class="item" type="text" id="idname" name="nombre" />
+        <br />
+        <label for="idpass">Contraseña:</label>
+        <input class="item" type="password" id="idpass" name="contraseña" />
+        <br />
+        <input class="button"  type="submit" value="Enviar" />
+      </form>
+      <p class="coment">Aún no tienés tu cuenta en Digital Services?<br />
+        <a href="#">Registrate aquí</a> y accedé a beneficios exclusivos.</p>
+    </div>
+    <!--novedades-->
+    <div class="content">
+      <h1>Novedades</h1>
+      <div>
+        <iframe width="300" height="250" src="http://www.youtube.com/embed/iK_5t_vHHok" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <!--MAIN-->
+  <div id="main">
+    <h1>Productos destacados con tabla</h1>
+    <div class="content white">
+      <table class="catalog" cellpadding="5">
+        <tr>
+          <td align="center" width="33%" height="100" valign="middle"><div class="content_img"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></div>
+            <p class="name">Objetivo Nickon 35mm</p></td>
+          <td align="center" width="33%" height="100" valign="middle"><div class="content_img"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></div>
+            <p class="name">Objetivo Nickon 35mm</p></td>
+          <td align="center" width="33%" height="100" valign="middle"><div class="content_img"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></div>
+            <p class="name">Objetivo Nickon 35mm</p></td>
+        </tr>
+        <tr >
+          <td align="center" width="33%" height="30" style="padding-top:10px"><a href="#" class="button">Ver producto</a></td>
+          <td align="center" width="33%" height="30"><a href="#" class="button">Ver producto</a></td>
+          <td align="center" width="33%" height="30"><a href="#" class="button">Ver producto</a></td>
+        </tr>
+      </table>
+    </div>
+    <h1>con div</h1>
+    <div class="content white prod">
+      <div style="float:left; padding:10px 0 0 7px" >
+          <!--prod_box-->
+            <div class="prod_box">
+              <div class="center_prod_box">
+                <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+                <p class="name">Objetivo Nickon 35mm</p>
+              </div>
+              <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+            </div>
+            <!--prod_box-->
+            <div class="prod_box">
+              <div class="center_prod_box">
+                <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+                <p class="name">Objetivo Nickon 35mm</p>
+              </div>
+              <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+            </div>
+            <!--prod_box-->
+            <div class="prod_box">
+              <div class="center_prod_box">
+                <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+                <p class="name">Objetivo Nickon 35mm</p>
+              </div>
+              <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+            </div>
+          </div> 
+    </div>
+    <h1>con listado</h1>
+    <div class="content white">
+      <ol class="prod_boxes">
+        <!--prod_box-->
+          <li class="prod_box">
+            <div class="center_prod_box">
+              <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+              <p class="name">Objetivo Nickon 35mm aksaksdklaasdas</p>
+            </div>
+            <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+          </li>
+          <!--prod_box-->
+          <li class="prod_box">
+            <div class="center_prod_box">
+              <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+              <p class="name">Objetivo Nickon 35mm</p>
+            </div>
+            <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+          </li>
+          <!--prod_box-->
+          <li class="prod_box">
+            <div class="center_prod_box">
+              <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+              <p class="name">Objetivo Nickon 35mm</p>
+            </div>
+            <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+          </li>
+        </ol>
+      <ol class="prod_boxes">
+        <!--prod_box-->
+          <li class="prod_box">
+            <div class="center_prod_box">
+              <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+              <p class="name">Objetivo Nickon 35mm aksaksdklaasdas</p>
+            </div>
+            <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+          </li>
+          <!--prod_box-->
+          <li class="prod_box">
+            <div class="center_prod_box">
+              <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+              <p class="name">Objetivo Nickon 35mm</p>
+            </div>
+            <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+          </li>
+          <!--prod_box-->
+          <li class="prod_box">
+            <div class="center_prod_box">
+              <div class="product_img"><a href="#"><img src="sites/all/themes/digital/images/prod.jpg" width="189" height="191" title="prod" /></a></div>
+              <p class="name">Objetivo Nickon 35mm</p>
+            </div>
+            <div class="prod_button_region"> <a href="#" class="button">Ver producto</a> </div>
+          </li>
+        </ol> 
+    <div class="pagination"><a href="#" class="button">Ver todos</a> </div>
+    </div> 
+     <h1>Buscar por marcas</h1>
+    <div class="content grey">
+    <ul class="images">
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li class="last"><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    <li><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+   <li class="last"><a href="#"><img src="sites/all/themes/digital/images/marcas1.jpg" width="82" height="82" title="nickon" /></a></li>
+    </ul>
+    </div>
+    
+  </div><!--end MAIN-->
+  <div class="clearfix"></div>
+ </div><!--end MIDDLE-->
+ <!--FOOTER-->
+  <div id="footer">
+  <div id="topfoot">
+  <div class="content">
+  <div class="banner_topFooter">
+  <img src="sites/all/themes/digital/images/topFooter_icon.png" width="82" height="82" />
+  <h2><a href="#">Reparamos tu c&aacute;mara o GPS en solo 7 días y al menor costo *</a></h2>
+  <p>Consutlanos al <a href="#">info@digitalservices.com.ar</a> o llamanos al (0351) 4678912<br />
+*Tiempos aproximados </p>
+  </div>
+  </div>
+  </div>
+  <div class="content">
+  <div class="footer_column">
+  <div class="logoFooter"><img src="sites/all/themes/digital/images/logo_footer.jpg" width="120" height="100" title="logo" /></div>
+  <p class="legal">Belgrano 94 - Córdoba - Argentina<br />
+
+Tel. 0351 4237572<br />
+<br />
+
+&copy; 2011 www.digitalservices.com.ar  | <a href="#"> Aviso legal</a></p>
+  </div>
+  <div class="footer_column" style="border-left:1px solid #464646; border-right:1px solid #464646;">
+  <ul class="main">
+  <li><a href="#">Inicio</a></li>
+  <li><a href="#">Productos</a></li>
+  <li><a href="#">Servicios</a></li>
+  <li><a href="#">Promociones</a></li>
+  <li><a href="#">Contacto</a></li>
+  <li class="social"><a href="#"><img src="sites/all/themes/digital/images/face_icon.png" width="30" height="30" title="facebook" /></a></li>
+
+  </ul>
+  </div>
+  <div class="footer_column"><a href="#"><img src="sites/all/themes/digital/images/banner_footer.jpg" width="309" height="258" title="banner" /></a></div>
+  </div>
+  <div class="clearfix"></div>
+  </div>
+  
+  
+  ------------------------------------------------------
+
 
   <?php if ($primary_links): ?>
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
