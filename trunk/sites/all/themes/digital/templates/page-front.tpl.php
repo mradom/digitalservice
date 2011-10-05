@@ -108,6 +108,7 @@
  * @see zen_process()
  */
 ?>
+<!-- HEADER --> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 
@@ -116,6 +117,13 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <script>
+		$(document).ready(function() {
+			$(function() {
+				Cufon.replace('.eu', { fontFamily: 'Euromode', hover: true })
+			});
+		});
+  </script>
 </head>
 <body class="<?php print $classes; ?>">
 <!--HEAD-->
@@ -124,8 +132,8 @@
     <div class="content">
       <div class="nav">
         <div class="active"><a href="#">Buscar</a></div>
-        <div><a href="#">Ingresar </a></div>
-        <div><a href="#">Registrarse</a></div>
+        <div><a href="user/login">Ingresar </a></div>
+        <div><a href="user/register">Registrarse</a></div>
       </div>
     </div>
   </div>
@@ -147,17 +155,15 @@
 <div id="nav_region">
   <div class="content">
     <ul class="nav_menu">
-  <?php if ($primary_links): ?>
-    <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
-  <?php endif; ?>
-      <li class="active"><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Promociones + Oulet</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li class="active"><a href="<?php echo $front_page;?>">Inicio</a></li>
+      <li><a href="<?php echo $front_page;?>">Productos</a></li>
+      <li><a href="<?php echo $front_page;?>">Promociones + Oulet</a></li>
+      <li><a href="<?php echo $front_page;?>">Servicios</a></li>
+      <li><a href="<?php echo $front_page;?>">Contacto</a></li>
     </ul>
   </div>
 </div>
+<!-- END HEADER --> 
 
 <!--MIDDLE-->
 <div class="content">
@@ -430,7 +436,6 @@ Tel. 0351 4237572<br />
     </div></div><!-- /.section, /#header -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
-
       <div id="content" class="column"><div class="section">
 
         <?php if ($mission): ?>
@@ -462,7 +467,6 @@ Tel. 0351 4237572<br />
         <?php endif; ?>
 
       </div></div><!-- /.section, /#content -->
-
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
 

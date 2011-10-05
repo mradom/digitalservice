@@ -89,7 +89,7 @@ input.item {
 	margin-bottom:7px
 }
 input.button, .button {
-	background:#595e5f url(images/bg_button_grey.gif) repeat-x bottom;
+	background:#595e5f url(../images/bg_button_grey.gif) repeat-x bottom;
 	padding:3px 7px;
 	color:#CCC;
 	width:auto;
@@ -99,7 +99,7 @@ input.button:hover, .button:hover {
 	opacity: .8
 }
 a.button{ float:left; margin:0 auto; font-size: .8em}
-a.button:hover{#35ae73 background:url(images/bg_button_green.gif) repeat-x bottom; opacity:100%; width:auto}
+a.button:hover{#35ae73 background:url(../images/bg_button_green.gif) repeat-x bottom; opacity:100%; width:auto}
 /***********************/
 /*--header--*/
 /***********************/
@@ -113,7 +113,7 @@ a.button:hover{#35ae73 background:url(images/bg_button_green.gif) repeat-x botto
 #topHeader {
 	width:100%;
 	height:33px;
-	background:#575c5c url(images/bg_TopHeader_nav.jpg) repeat;
+	background:#575c5c url(../images/bg_TopHeader_nav.jpg) repeat;
 }
 #topHeader .nav {
 	float:right;
@@ -134,7 +134,7 @@ a.button:hover{#35ae73 background:url(images/bg_button_green.gif) repeat-x botto
 	color:#ccc
 }
 #header > .content {
-	background:url(images/bg_header.jpg) top no-repeat;
+	background:url(../images/bg_header.jpg) top no-repeat;
 	height:130px;
 }
 #logo {
@@ -154,7 +154,8 @@ a.button:hover{#35ae73 background:url(images/bg_button_green.gif) repeat-x botto
 .slogan h1 {
 	font-size:1.4em;
 	font-style:italic;
-	margin-bottom:10px
+	margin-bottom:10px;
+	width: 410px;
 }
 .slogan p {
 	font: normal .8em Arial, Helvetica, sans-serif;
@@ -182,7 +183,7 @@ form.searchform {
 	height:29px;
 	display:inline-block;
 	width: 37px;
-	background: #636363 url(images/search_button.png) top no-repeat;
+	background: #636363 url(../images/search_button.png) top no-repeat;
 	border:0;
 	text-indent:-50px;
 }
@@ -195,7 +196,7 @@ form.searchform {
 /***********************/
 #nav_region {
 	width:100%;
-	background: #38a349 url(images/bg_menu.gif) bottom repeat;
+	background: #38a349 url(../images/bg_menu.gif) bottom repeat;
 	height:44px;
 }
 ul.nav_menu {
@@ -268,12 +269,12 @@ ul.nav_menu li.active:hover a {
 	ul.accordion li li{ border:0;}
 #main_side ul.accordion ul {margin:0; padding:0 0 0 20px;}
 
-a.trigger {display:block; padding-left:30px; background-image: url(images/plus_main-side.png); background-repeat: no-repeat; background-position: 10px 50%; color:#373737;}
+a.trigger {display:block; padding-left:30px; background-image: url(../images/plus_main-side.png); background-repeat: no-repeat; background-position: 10px 50%; color:#373737;}
  
-a.trigger.open {background-image: url(images/minus_main-side.png)}
+a.trigger.open {background-image: url(../images/minus_main-side.png)}
  
 .last-child a.trigger{padding-left:30px;}
-.last-child a.trigger.open{padding-left:30px; background-image: url(images/plus_main-side.png); }
+.last-child a.trigger.open{padding-left:30px; background-image: url(../images/plus_main-side.png); }
 ul.accordion li .last-child a.trigger{padding-left:30px; background-image:none}
 
 /*--banner-flip--*/
@@ -353,7 +354,7 @@ table.catalog td{ text-align:center; }
 .content_img{ width:195px; height:200px; border:1px solid #aaaaaa; margin:0 auto;}
 table.catalog .button{ float:none; width:80px;}
 
-table.catalog .button:hover{ opacity:1; background:#35ad71 url(images/bg_button_green.gif) bottom repeat-x; color:#fff }
+table.catalog .button:hover{ opacity:1; background:#35ad71 url(../images/bg_button_green.gif) bottom repeat-x; color:#fff }
 table.catalog p.name{ font-size:.9em}
 
 /*---prod box con div y li---*/
@@ -386,7 +387,7 @@ table.catalog p.name{ font-size:.9em}
 	margin:3px 0 0 0;
 }
 .prod_button_region .button{ margin-left:53px }
-.prod_button_region .button:hover{ opacity:1; background:#35ad71 url(images/bg_button_green.gif) bottom repeat-x; color:#FFF}
+.prod_button_region .button:hover{ opacity:1; background:#35ad71 url(../images/bg_button_green.gif) bottom repeat-x; color:#FFF}
 .prod_box p.name, ol.prod_boxes_mini li p.name{ font-size:.9em}
 
 /*---prod box con listado---*/
@@ -445,10 +446,10 @@ ol.prod_boxes_mini .prod_button_region .button{ margin-left:35px}
 	border:none
 }
 
-.pager-content a.first{background-image: url(images/pager-first.png); }
-.pager-content a.previous{background-image: url(images/pager-previous.png);}
-.pager-content a.last{background-image: url(images/pager-last.png); }
-.pager-content a.next{background-image: url(images/pager-next.png); }
+.pager-content a.first{background-image: url(../images/pager-first.png); }
+.pager-content a.previous{background-image: url(../images/pager-previous.png);}
+.pager-content a.last{background-image: url(../images/pager-last.png); }
+.pager-content a.next{background-image: url(../images/pager-next.png); }
 
 .pager-content a.first:hover,
 .pager-content a.last:hover,
@@ -501,13 +502,13 @@ ol.prod_boxes_mini .prod_button_region .button{ margin-left:35px}
 #topfoot {
 	width:100%;
 	height:90px;
-	background:#7cd341 url(images/bg_topFoot.gif) repeat;
+	background:#7cd341 url(../images/bg_topFoot.gif) repeat;
 	border-bottom:3px solid #0d5a2c;
 }
 .footer_column{ width:33%; float:left; margin-top:10px;}
 .footer_column a{color:#8d8d8d;}
 .footer_column a:hover, .banner_topFooter a:hover { text-decoration:underline}
-.banner_topFooter{ background:url(images/bg_banner_topFooter.jpg) repeat-x; height:90px; width:675px; margin:0 auto;}
+.banner_topFooter{ background:url(../images/bg_banner_topFooter.jpg) repeat-x; height:90px; width:675px; margin:0 auto;}
 .banner_topFooter img{ float:left; padding:5px 15px 0 15px; display:inline-block}
 .banner_topFooter h2 a{ float:left; font: normal 1.2em Arial, Helvetica, sans-serif; color:#030; margin-top:15px; width:540px;}
 .banner_topFooter p{ font-size:.8em; color:#030}

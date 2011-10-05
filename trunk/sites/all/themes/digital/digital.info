@@ -23,23 +23,23 @@ base theme = zen
   ; an /extremely/ useful feature. See the excellent Drupal 6 Theme Guide at
   ; http://drupal.org/node/263967 for more details.
 stylesheets[all][]   = css/style.css
-stylesheets[all][]   = css/html-reset.css
-stylesheets[all][]   = css/wireframes.css
-stylesheets[all][]   = css/layout-liquid.css
-stylesheets[all][]   = css/page-backgrounds.css
-stylesheets[all][]   = css/tabs.css
-stylesheets[all][]   = css/messages.css
-stylesheets[all][]   = css/pages.css
-stylesheets[all][]   = css/block-editing.css
-stylesheets[all][]   = css/blocks.css
-stylesheets[all][]   = css/navigation.css
-stylesheets[all][]   = css/panels-styles.css
-stylesheets[all][]   = css/views-styles.css
-stylesheets[all][]   = css/nodes.css
-stylesheets[all][]   = css/comments.css
-stylesheets[all][]   = css/forms.css
-stylesheets[all][]   = css/fields.css
-stylesheets[print][] = css/print.css
+ ; stylesheets[all][]   = css/html-reset.css
+ ; stylesheets[all][]   = css/wireframes.css
+ ; stylesheets[all][]   = css/layout-liquid.css
+ ; stylesheets[all][]   = css/page-backgrounds.css
+ ; stylesheets[all][]   = css/tabs.css
+ ; stylesheets[all][]   = css/messages.css
+ ; stylesheets[all][]   = css/pages.css
+ ; stylesheets[all][]   = css/block-editing.css
+ ; stylesheets[all][]   = css/blocks.css
+ ; stylesheets[all][]   = css/navigation.css
+ ; stylesheets[all][]   = css/panels-styles.css
+ ; stylesheets[all][]   = css/views-styles.css
+ ; stylesheets[all][]   = css/nodes.css
+ ; stylesheets[all][]   = css/comments.css
+ ; stylesheets[all][]   = css/forms.css
+ ; stylesheets[all][]   = css/fields.css
+ ; stylesheets[print][] = css/print.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
@@ -95,3 +95,17 @@ settings[zen_breadcrumb_trailing]  = 1
 settings[zen_breadcrumb_title]     = 0
 settings[zen_rebuild_registry]     = 1
 settings[zen_wireframes]           = 0
+
+scripts[] = js/cufon-yui.js
+scripts[] = js/Euromode.js
+scripts[] = js/gTabs.js
+scripts[] = js/jquery.js
+scripts[] = js/jquery.nestedAccordion.js
+scripts[] = js/jquery_slide.js
+
+stylesheets[all][] = s3/jquery.ad-gallery.css
+stylesheets[all][] = s3/s-slider.css
+
+scripts[] = s3/jquery.min.js
+scripts[] = s3/init-s3.js
+scripts[] = s3/s3Slider.js
